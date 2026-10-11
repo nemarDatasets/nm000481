@@ -1,0 +1,103 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Hong-Viet V. Ngo": {
+      "orcid": "0000-0001-5828-5588"
+    },
+    "Juergen Fell": {},
+    "Bernhard P. Staresina": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.17605/OSF.IO/3HPVR",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.7554/eLife.57011",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/nn.4119",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000481",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000481",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "ERC Starting Grant 'RECALL' (Staresina, as acknowledged in the article)"
+    },
+    {
+      "funder_name": "European Research Council",
+      "award_title": "Starting Grant 'RECALL'"
+    },
+    {
+      "funder_name": "Deutsche Forschungsgemeinschaft",
+      "award_number": "SFB1089"
+    }
+  ],
+  "title": "s500-literature-201: Whole-night hippocampal depth and scalp Cz sleep EEG with spindle and ripple detections, 14 epilepsy patients (Ngo, Fell & Staresina, 2020) (derivative)",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "8.43 GB (131 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".m",
+    ".mat",
+    ".py",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".zip"
+  ],
+  "description": "Whole-night sleep recordings from 14 pre-surgical epilepsy patients, comprising a posterior hippocampal depth channel and scalp Cz EEG sampled at 1 kHz (135.6 h in total). The derivative dataset repackages the authors' released data into BIDS and includes sleep stage scoring, artifact intervals, and automated ripple and spindle detections. It supports investigation of hippocampal-neocortical coupling between sleep spindles and long-duration ripples during sleep.",
+  "methods_description": "Two channels per patient (hippocampal depth contact of the non-pathological hemisphere with the highest spindle density, and scalp Cz) were recorded overnight at 1 kHz, referenced to linked mastoids with a hardware band-pass of 0.01-300 Hz. Sleep was scored following Rechtschaffen & Kales criteria, and ripples, spindles and artifacts were identified with the authors' automated detectors. Released FieldTrip structures were converted to BrainVision float32 format.",
+  "keywords": [
+    {
+      "term": "sleep"
+    },
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "scalp EEG"
+    },
+    {
+      "term": "Hippocampus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D006624"
+    },
+    {
+      "term": "sleep spindles"
+    },
+    {
+      "term": "ripples"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    }
+  ],
+  "source_hash": "726cca1513a7730b88d89094614b92cf3850dd8562f4084b38862c699fb0fae3"
+}
