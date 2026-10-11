@@ -1,0 +1,6 @@
+{
+  "iEEGCoordinateSystem": "Other",
+  "iEEGCoordinateUnits": "mm",
+  "iEEGCoordinateSystemDescription": "No MRI/coordinates for this patient in the article (Table 3 lists none for patients 2, 3 and 5).",
+  "iEEGCoordinateProcessingDescription": "Values copied from the article table; no processing."
+}

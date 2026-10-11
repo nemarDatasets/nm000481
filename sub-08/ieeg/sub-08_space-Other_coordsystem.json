@@ -1,0 +1,6 @@
+{
+  "iEEGCoordinateSystem": "Other",
+  "iEEGCoordinateUnits": "mm",
+  "iEEGCoordinateSystemDescription": "MNI coordinates of the included hippocampal contact as listed in Table 3 of the article (doi:10.7554/eLife.57011); the MNI template version is not stated, so the system is recorded as Other. Patient numbering verified against the article's Table 2 spindle counts (see README).",
+  "iEEGCoordinateProcessingDescription": "Values copied from the article table; no processing."
+}

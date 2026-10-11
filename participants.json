@@ -1,0 +1,12 @@
+{
+  "age": {
+    "Description": "not given per patient (article: 35.4 +- 3.0 years, group mean)",
+    "Units": "year"
+  },
+  "sex": {
+    "Description": "not given per patient (article: seven females of 14)"
+  },
+  "source_id": {
+    "Description": "patient code in the release file names"
+  }
+}

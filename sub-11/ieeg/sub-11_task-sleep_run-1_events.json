@@ -1,0 +1,132 @@
+{
+  "onset": {
+    "Description": "Event onset in the recording",
+    "Units": "s"
+  },
+  "duration": {
+    "Description": "Event duration",
+    "Units": "s"
+  },
+  "trial_type": {
+    "Description": "sleep_stage_<stage>: run of constant sleep scoring (per-sample 'scoring' of the release supplement files; stage codes 0-5 as released, named wake/S1/S2/S3/S4/REM after the Rechtschaffen & Kales scoring reported in the article and the detector's NREM stages 2-4); artifact_<channel>: artifact interval from the authors' automated artifact detection (release 'artifacts' start/end samples); ripple_HIPP, spindle_HIPP, spindle_NC: events of the authors' detectors (release Ripples/Spindles EvtInfo staTime..endTime)."
+  },
+  "channel": {
+    "Description": "Channel the event belongs to (HIPP or NC); n/a for sleep stages (one scoring for the night)"
+  },
+  "sleep_stage": {
+    "Description": "Sleep stage code (release value): for sleep_stage rows the code of the run; for ripples/spindles the EvtInfo.stage of the event"
+  },
+  "rejected": {
+    "Description": "1 if the authors' detector flagged the event as rejected (release 'rejects'), else 0; the article counts exclude rejected events"
+  },
+  "envelope_max_amplitude": {
+    "Description": "EvtInfo.envMaxAmp of the detected event (band-passed envelope maximum, µV)"
+  },
+  "sample": {
+    "Description": "Onset sample (0-based)"
+  },
+  "DetectorParameters": {
+    "ripple_HIPP": {
+      "bpfreq": [
+        80.0,
+        120.0
+      ],
+      "criterionLen": [
+        0.038,
+        0.5
+      ],
+      "criterionScale": [
+        2.5
+      ],
+      "criterionVar": "sdCenter",
+      "envelopeType": "rms",
+      "envelopeWin": [
+        0.02
+      ],
+      "filtType": "fir",
+      "slStages": [
+        2.0,
+        3.0,
+        4.0
+      ],
+      "upperCutoff": [
+        9.0
+      ],
+      "EvtThres": [
+        2.4827836606501794
+      ],
+      "minCyclesNum": [
+        3.0
+      ],
+      "minCycles": [
+        1.0
+      ]
+    },
+    "spindle_HIPP": {
+      "bpfreq": [
+        12.0,
+        16.0
+      ],
+      "criterionLen": [
+        0.4,
+        3.0
+      ],
+      "criterionScale": [
+        1.25
+      ],
+      "criterionVar": "sdCenter",
+      "envelopeType": "rms",
+      "envelopeWin": [
+        0.2
+      ],
+      "filtType": "fir",
+      "slStages": [
+        2.0,
+        3.0,
+        4.0
+      ],
+      "upperCutoff": [
+        5.0
+      ],
+      "EvtThres": [
+        25.54310823038217
+      ],
+      "minCycles": [
+        0.0
+      ]
+    },
+    "spindle_NC": {
+      "bpfreq": [
+        12.0,
+        16.0
+      ],
+      "criterionLen": [
+        0.4,
+        3.0
+      ],
+      "criterionScale": [
+        1.25
+      ],
+      "criterionVar": "sdCenter",
+      "envelopeType": "rms",
+      "envelopeWin": [
+        0.2
+      ],
+      "filtType": "fir",
+      "slStages": [
+        2.0,
+        3.0,
+        4.0
+      ],
+      "upperCutoff": [
+        5.0
+      ],
+      "EvtThres": [
+        3.6071384545025893
+      ],
+      "minCycles": [
+        0.0
+      ]
+    }
+  }
+}

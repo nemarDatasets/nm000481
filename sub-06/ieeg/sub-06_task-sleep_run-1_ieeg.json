@@ -1,0 +1,29 @@
+{
+  "TaskName": "sleep",
+  "TaskDescription": "Whole-night sleep recording in the epilepsy monitoring unit (no task); sleep stages scored visually per 20 s epoch (Rechtschaffen & Kales) from scalp EEG, EOG and EMG (article).",
+  "Instructions": "n/a (sleep)",
+  "PowerLineFrequency": 50,
+  "HardwareFilters": {
+    "Bandpass": {
+      "HighpassCutoff": 0.01,
+      "HighpassRollOff": "6 dB/octave",
+      "LowpassCutoff": 300,
+      "LowpassRollOff": "12 dB/octave"
+    }
+  },
+  "SoftwareFilters": "n/a",
+  "iEEGReference": "linked mastoids (article)",
+  "Manufacturer": "n/a",
+  "iEEGPlacementScheme": "Bilateral hippocampal depth electrodes implanted stereotactically for presurgical evaluation (University of Bonn); the released channel HIPP is the posterior hippocampal contact of the non-pathological hemisphere with the highest spindle density (article). NC is scalp electrode Cz (10-20).",
+  "ElectricalStimulation": false,
+  "RecordingType": "continuous",
+  "SamplingFrequency": 1000.0,
+  "RecordingDuration": 34414.4,
+  "ECOGChannelCount": 0,
+  "SEEGChannelCount": 1,
+  "DBSChannelCount": 0,
+  "EEGChannelCount": 1,
+  "EMGChannelCount": 0,
+  "MiscChannelCount": 0,
+  "TriggerChannelCount": 0
+}

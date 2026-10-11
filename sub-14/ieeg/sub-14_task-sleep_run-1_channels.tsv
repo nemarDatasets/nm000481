@@ -1,0 +1,3 @@
+name	type	units	low_cutoff	high_cutoff	sampling_frequency	reference	group	status	status_description	description
+HIPP	SEEG	µV	0.01	300	1000.0	linked mastoids	HIPP	good	n/a	posterior hippocampal depth contact (non-pathological hemisphere), selected by the authors; label as released
+NC	EEG	µV	0.01	300	1000.0	linked mastoids	n/a	good	n/a	scalp EEG electrode Cz (10-20), labelled NC (neocortex) in the release

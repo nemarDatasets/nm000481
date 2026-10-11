@@ -1,0 +1,49 @@
+{
+  "Name": "s500-literature-201: Whole-night hippocampal depth and scalp Cz sleep EEG with spindle and ripple detections, 14 epilepsy patients (Ngo, Fell & Staresina, 2020) (derivative)",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "derivative",
+  "License": "CC-BY-4.0",
+  "Authors": [
+    "Hong-Viet V. Ngo",
+    "Juergen Fell",
+    "Bernhard P. Staresina"
+  ],
+  "HowToAcknowledge": "Cite Ngo HV, Fell J, Staresina B (2020) Sleep spindles mediate hippocampal-neocortical coupling during long-duration ripples. eLife 9:e57011, doi:10.7554/eLife.57011; and the OSF dataset doi:10.17605/OSF.IO/3HPVR.",
+  "ReferencesAndLinks": [
+    "https://doi.org/10.7554/eLife.57011",
+    "https://doi.org/10.17605/OSF.IO/3HPVR",
+    "https://osf.io/3hpvr/",
+    "https://github.com/episodicmemorylab/Ngo_et_al_eLife2020",
+    "https://doi.org/10.1038/nn.4119"
+  ],
+  "Keywords": [
+    "sleep",
+    "hippocampus",
+    "ripples",
+    "sleep spindles",
+    "intracranial EEG",
+    "scalp EEG",
+    "memory consolidation",
+    "epilepsy"
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "doi:10.17605/OSF.IO/3HPVR",
+      "URL": "https://osf.io/3hpvr/",
+      "Version": "OSF node 3hpvr, 127 files as listed 2026-10-11 (sha256 per file in sourcedata/osf-3hpvr/DEIDENTIFICATION_MANIFEST.tsv)"
+    }
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "o5c_A2_convert_lit201.py",
+      "Description": "Repackaging of the released FieldTrip raw structures (HIPP + NC per patient) into BrainVision float32 (values unchanged, MNE read-back checked); sleep scoring, artifact intervals and the authors' ripple/spindle detections into events.tsv. Code in code/."
+    }
+  ],
+  "EthicsApprovals": [
+    "Approved by the ethics committee of the Medical Faculty of the University of Bonn (reference number 042/16); informed consent from all patients (article)."
+  ],
+  "Funding": [
+    "ERC Starting Grant 'RECALL' (Staresina, as acknowledged in the article)",
+    "Deutsche Forschungsgemeinschaft SFB1089 (Fell)"
+  ]
+}
