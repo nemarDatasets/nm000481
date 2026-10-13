@@ -45,5 +45,7 @@
   "Funding": [
     "ERC Starting Grant 'RECALL' (Staresina, as acknowledged in the article)",
     "Deutsche Forschungsgemeinschaft SFB1089 (Fell)"
-  ]
+  ],
+  "DatasetDOI": "10.82901/nemar.nm000481",
+  "Version": "1.0.0"
 }
