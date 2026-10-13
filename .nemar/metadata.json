@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "s500-literature-201: Whole-night hippocampal depth and scalp Cz sleep EEG with spindle and ripple detections, 14 epilepsy patients (Ngo, Fell & Staresina, 2020) (derivative)",
+  "description": "Whole-night sleep recordings from 14 pre-surgical epilepsy patients (135.6 h in total), comprising a posterior hippocampal depth contact and scalp Cz recorded at 1 kHz. The derivative dataset repackages the authors' released data into BIDS and includes sleep scoring, artifact intervals, and automated ripple and spindle detections. It supports investigation of hippocampal-neocortical coupling between sleep spindles and long-duration ripples during sleep.",
+  "methods_description": "Two channels per patient were recorded overnight at 1 kHz: a hippocampal depth contact in the non-pathological hemisphere (the contact with the highest spindle density) and scalp Cz. Both were referenced to linked mastoids with a hardware band-pass of 0.01-300 Hz. Sleep was scored following Rechtschaffen & Kales criteria, and ripples and spindles were found with the authors' automated detectors.",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "Hong-Viet V. Ngo": {
       "orcid": "0000-0001-5828-5588"
@@ -8,6 +13,33 @@
     "Juergen Fell": {},
     "Bernhard P. Staresina": {}
   },
+  "keywords": [
+    {
+      "term": "Sleep"
+    },
+    {
+      "term": "Hippocampus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D006624"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    },
+    {
+      "term": "Intracranial EEG"
+    },
+    {
+      "term": "Sleep spindles"
+    },
+    {
+      "term": "Ripples"
+    },
+    {
+      "term": "Memory consolidation"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.17605/OSF.IO/3HPVR",
@@ -41,21 +73,18 @@
     },
     {
       "funder_name": "European Research Council",
-      "award_title": "Starting Grant 'RECALL'"
+      "award_title": "RECALL (Starting Grant)"
     },
     {
       "funder_name": "Deutsche Forschungsgemeinschaft",
       "award_number": "SFB1089"
     }
   ],
-  "title": "s500-literature-201: Whole-night hippocampal depth and scalp Cz sleep EEG with spindle and ripple detections, 14 epilepsy patients (Ngo, Fell & Staresina, 2020) (derivative)",
-  "license": "CC-BY-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
     "8.43 GB (131 files)"
   ],
@@ -64,40 +93,13 @@
     ".json",
     ".m",
     ".mat",
+    ".md",
     ".py",
     ".tsv",
     ".vhdr",
     ".vmrk",
+    ".yml",
     ".zip"
   ],
-  "description": "Whole-night sleep recordings from 14 pre-surgical epilepsy patients, comprising a posterior hippocampal depth channel and scalp Cz EEG sampled at 1 kHz (135.6 h in total). The derivative dataset repackages the authors' released data into BIDS and includes sleep stage scoring, artifact intervals, and automated ripple and spindle detections. It supports investigation of hippocampal-neocortical coupling between sleep spindles and long-duration ripples during sleep.",
-  "methods_description": "Two channels per patient (hippocampal depth contact of the non-pathological hemisphere with the highest spindle density, and scalp Cz) were recorded overnight at 1 kHz, referenced to linked mastoids with a hardware band-pass of 0.01-300 Hz. Sleep was scored following Rechtschaffen & Kales criteria, and ripples, spindles and artifacts were identified with the authors' automated detectors. Released FieldTrip structures were converted to BrainVision float32 format.",
-  "keywords": [
-    {
-      "term": "sleep"
-    },
-    {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "scalp EEG"
-    },
-    {
-      "term": "Hippocampus",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D006624"
-    },
-    {
-      "term": "sleep spindles"
-    },
-    {
-      "term": "ripples"
-    },
-    {
-      "term": "Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
-    }
-  ],
-  "source_hash": "726cca1513a7730b88d89094614b92cf3850dd8562f4084b38862c699fb0fae3"
+  "source_hash": "9d5766f5b634ce53afcca5677b5434bc1d32d627a733b2c4bd921001e7a9240a"
 }
