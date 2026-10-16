@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "s500-literature-201: Whole-night hippocampal depth and scalp Cz sleep EEG with spindle and ripple detections, 14 epilepsy patients (Ngo, Fell & Staresina, 2020) (derivative)",
-  "description": "Whole-night sleep recordings from 14 pre-surgical epilepsy patients, comprising a posterior hippocampal depth contact and scalp Cz at 1 kHz, totaling 135.6 hours. The derivative dataset repackages the authors' OSF release and includes sleep stage scoring, artifact intervals, and detected ripples and spindles. It supports investigation of hippocampal-neocortical coupling during sleep and memory consolidation.",
-  "methods_description": "Two channels per patient were recorded overnight at 1 kHz: a hippocampal depth contact in the non-pathological hemisphere and scalp electrode Cz. Both were referenced to linked mastoids with a hardware band-pass of 0.01-300 Hz. Sleep was scored per Rechtschaffen & Kales criteria, and ripples, spindles and artifacts were detected with the authors' automated detectors. The released FieldTrip structures were converted to BrainVision float32 format.",
+  "description": "Whole-night sleep recordings from 14 pre-surgical epilepsy patients (135.6 h in total), with two channels per patient sampled at 1 kHz: a posterior hippocampal depth contact and scalp electrode Cz. The derivative dataset repackages the authors' OSF release into BIDS and includes sleep scoring, artifact intervals, and detected sleep spindles and hippocampal ripples. It supports study of spindle-ripple coupling and hippocampal-neocortical interaction during sleep.",
+  "methods_description": "Continuous sleep EEG was recorded from a posterior hippocampal depth contact in the non-pathological hemisphere and from scalp Cz. Signals were referenced to linked mastoids with a hardware band-pass of 0.01-300 Hz. Sleep was scored by Rechtschaffen & Kales criteria, and artifacts, ripples and spindles were identified with the authors' automated detectors. The released FieldTrip structures were converted to BrainVision float32 format.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -15,20 +15,16 @@
   },
   "keywords": [
     {
+      "term": "sleep"
+    },
+    {
       "term": "intracranial EEG"
     },
     {
       "term": "scalp EEG"
     },
     {
-      "term": "Sleep",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D012890"
-    },
-    {
-      "term": "Hippocampus",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D006624"
+      "term": "hippocampus"
     },
     {
       "term": "sleep spindles"
@@ -40,9 +36,7 @@
       "term": "memory consolidation"
     },
     {
-      "term": "Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+      "term": "epilepsy"
     }
   ],
   "related_identifiers": [
@@ -78,7 +72,7 @@
     },
     {
       "funder_name": "European Research Council",
-      "award_title": "RECALL (Starting Grant)"
+      "award_title": "Starting Grant 'RECALL'"
     },
     {
       "funder_name": "Deutsche Forschungsgemeinschaft",
