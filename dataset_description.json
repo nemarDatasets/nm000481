@@ -1,5 +1,5 @@
 {
-  "Name": "Ngo-2020-sleep-10.7554/elife.57011",
+  "Name": "s500-literature-201: Whole-night hippocampal depth and scalp Cz sleep EEG with spindle and ripple detections, 14 epilepsy patients (Ngo, Fell & Staresina, 2020) (derivative)",
   "BIDSVersion": "1.10.0",
   "DatasetType": "derivative",
   "License": "CC-BY-4.0",
@@ -47,5 +47,5 @@
     "Deutsche Forschungsgemeinschaft SFB1089 (Fell)"
   ],
   "DatasetDOI": "10.82901/nemar.nm000481",
-  "Version": "1.0.1"
+  "Version": "1.0.2"
 }
